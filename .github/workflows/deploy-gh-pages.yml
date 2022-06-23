@@ -1,0 +1,26 @@
+name: Deloy gh-pages
+
+on:
+  workflow_dispatch: # enables on-demand/manual triggering
+  push:
+    branches:    
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [16.x] # deploy with only one version of node  
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version 
+
+      - name: Install, lint, build and export
+        shell: bash
+        run: yarn deploy -- -m "Deploy React app to GitHub Pages"
