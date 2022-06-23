@@ -1,4 +1,4 @@
-name: Deloy gh-pages
+name: Deploy gh-pages
 
 on:
   workflow_dispatch: # enables on-demand/manual triggering
@@ -19,7 +19,7 @@ jobs:
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v2
         with:
-          node-version: ${{ matrix.node-version 
+          node-version: ${{ matrix.node-version }}
 
       - name: Install, lint, build and export
         shell: bash
