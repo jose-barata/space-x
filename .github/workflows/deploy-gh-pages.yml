@@ -25,4 +25,4 @@ jobs:
         shell: bash
         run: |
           yarn install 
-          yarn deploy -- -m "Deploy React app to GitHub Pages"
+          yarn deploy
