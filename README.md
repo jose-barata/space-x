@@ -1,6 +1,8 @@
 # SpaceX App
 
-This is a create React application that consumes data from the SpaceX public API. The application retrieves historic and future SpaceX launches and presents them in a list view.
+- This is a create React application that consumes data from the SpaceX public API.
+- The application retrieves historic and future SpaceX launches and presents them in a list view.
+- Code challenge for xDesign, starter code provided and typescript not required.
 
 The API documentation is available from:
 Postman - [https://docs.spacexdata.com](https://docs.spacexdata.com/)
