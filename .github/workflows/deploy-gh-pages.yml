@@ -21,6 +21,8 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: Install, lint, build and export
+      - name: ci and deploy
         shell: bash
-        run: yarn deploy -- -m "Deploy React app to GitHub Pages"
+        run: |
+          yarn ci 
+          yarn deploy -- -m "Deploy React app to GitHub Pages"
